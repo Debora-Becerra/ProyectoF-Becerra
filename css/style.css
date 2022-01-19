@@ -142,6 +142,37 @@ button {
   border: 5px solid #f7f7f7;
 }
 
+#aventuras {
+  padding: 30px 10px 13px; 
+}
+#aventuras .aventuras_title {
+  margin-bottom: 26px;
+}
+#aventuras  .aventuras_player iframe {
+  display: block;
+  width: 100%;
+  margin-bottom: 11px;
+}
+@media screen and (min-width: 768px) {
+#aventuras {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  
+}
+#aventuras .aventuras_player {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  gap: 15px;
+}
+#aventuras .aventuras_player iframe {
+  width: 100%;
+  max-width: 584px;
+  height: 232px;
+}
+}
 /*=========================FOOTER================================*/
 
 footer {
