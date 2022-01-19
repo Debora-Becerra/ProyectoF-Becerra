@@ -56,7 +56,27 @@ button {
   background-color: #1b52d1b0;
   color: aliceblue;
 }
+/*===================AVENTURAS-CLIENTES==========================*/
 
+@media screen and (min-width: 765px;) {
+  #aventuras {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  #aventuras .aventuras_player {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 61px;
+  }
+  #aventuras .aventuras_player iframe {
+    width: 100%;
+    max-width: 584px;
+    height: 232px;
+  }
+  
+}
 /*===================SECCION NUESTRO EQUIPO MAPA==========================*/
 #local {
   margin-top: -62px;
