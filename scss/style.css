@@ -1,91 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-decoration: none;
   list-style: none;
   outline: none;
   text-align: center;
 }
 
-/*===============Propiedades Globales================*/
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
 body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
 
-/*===================MENU==========================*/
-.bg-dark {
-  background-color: #1b51d1;
+#menu a {
+  font-size: 18px !important;
+  font-weight: 600;
+  color: #3f3f3f;
 }
-#menu a,
+
 button {
   font-size: 18px !important;
   font-weight: 600;
 }
 
-#menu a {
-  color: #3f3f3f;
-}
-/*===================SLIDER DE IMAGENES==========================*/
-
 .carousel-inner {
   max-height: 39rem !important;
 }
 
-/*===================SECCION NUESTRO EQUIPO IMAGEN==========================*/
 .fondo-equipo {
   background-image: url(../img/fondo.contacto3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
+
 #img-equipo {
   max-height: 30rem !important;
   width: 50%;
   margin-bottom: 25px;
 }
+
 #equipo p {
   padding: 10px;
   background-color: rgba(240, 255, 255, 0);
 }
+
 #equipo p:hover {
   background-color: #1b52d1b0;
   color: aliceblue;
 }
-/*===================AVENTURAS-CLIENTES==========================*/
 
-@media screen and (min-width: 765px;){
-  #aventuras {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-  #aventuras .aventuras_player {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 61px;
-  }
-  #aventuras .aventuras_player iframe {
-    width: 100%;
-    max-width: 584px;
-    height: 232px;
-  }
-  
-}
-/*===================SECCION NUESTRO EQUIPO MAPA==========================*/
 #local {
   margin-top: -62px;
   background-image: url(../img/paisaje.salta1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-bottom: 300px;
 }
 
@@ -100,13 +79,6 @@ button {
   padding-top: 120px;
 }
 
-/*=========================CONTACTOS BACKGROUND================================*/
-
-/*#bg-contactos {
-  position: relative;
-  margin-bottom: 900px;
-}*/
-
 #seccion-contacto {
   background-image: url(../img/formulario1.jpg);
   background-repeat: no-repeat;
@@ -117,77 +89,50 @@ button {
   padding: 50px;
 }
 
-/*=========================CONTACTOS FORMULARIO================================*/
-
 #contenedor-formulario {
-  /*position: absolute;
-  top: 62%;
-  left: 50%;
-  transform: translate(-50%, -50%);*/
   background: #fbfafa;
   border-radius: 5px;
   padding-bottom: 10px;
 }
 
-/*=========================GALERIA================================*/
 #galeria .col-lg-4 {
   margin: 0 !important;
   padding: 25px;
 }
+
 #galeria img {
   width: 100%;
   height: 250px;
 }
+
 #galeria img:hover {
   border: 5px solid #f7f7f7;
 }
 
 #aventuras {
-  padding: 20px 10px 13px; 
+  padding: 20px 10px 13px;
 }
-.container-full-width {
-  max-width: 100%;
-  width: 100%;
-}
+
 #aventuras .aventuras_title {
   margin-bottom: 26px;
 }
-#aventuras  .aventuras_player iframe {
+
+#aventuras .aventuras_player iframe {
   display: block;
   width: 100%;
   margin-bottom: 11px;
 }
-@media screen and (min-width: 768px) {
-#aventuras {
-  position: relative;
+
+.container-full-width {
+  max-width: 100%;
   width: 100%;
-  height: auto;
-  margin-bottom: 20px;
-  padding: 20px 10px 13px;
-  
 }
-#aventuras .aventuras_title {
-  margin-bottom: 26px;
-  padding: 0 100px;
-}
-#aventuras .aventuras_player {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 61px;
-  
-}
-#aventuras .aventuras_player iframe {
-  width: 100%;
-  max-width: 584px;
-  height: 232px;
-}
-}
-/*=========================FOOTER================================*/
 
 footer {
   background: #1b51d1;
   min-height: 100px;
 }
+
 footer p {
   color: #f3f3f3;
   text-align: center;
@@ -199,17 +144,68 @@ footer p {
   color: #f3f3f3;
 }
 
-/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+@media screen and (min-width: 765px) {
+  #aventuras {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  #aventuras .aventuras_player {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 61px;
+  }
+  #aventuras .aventuras_player iframe {
+    width: 100%;
+    max-width: 584px;
+    height: 232px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #aventuras {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 20px 10px 13px;
+  }
+  #aventuras .aventuras_title {
+    margin-bottom: 26px;
+    padding: 0 100px;
+  }
+  #aventuras .aventuras_player {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 61px;
+  }
+  #aventuras .aventuras_player iframe {
+    width: 100%;
+    max-width: 584px;
+    height: 232px;
+  }
+}
 
 @media (max-width: 1200px) {
-  #intro,
+  #intro {
+    width: 90% !important;
+    margin: auto;
+  }
   #equipo {
     width: 90% !important;
     margin: auto;
   }
-
   #local {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding-top: 30px;
   }
   .wrapper-local {
@@ -218,15 +214,16 @@ footer p {
     padding-top: 50px;
   }
 }
-/*=========================MEDIA QUERIES PANTALLA SM================================*/
 
 @media (max-width: 768px) {
-  #intro,
+  #intro {
+    width: 90% !important;
+    margin: auto;
+  }
   #equipo {
     width: 90% !important;
     margin: auto;
   }
-
   #img-equipo {
     max-height: 20rem !important;
     width: 90%;
@@ -237,7 +234,8 @@ footer p {
     padding-top: 50px;
   }
   #local {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .mapa {
     width: 100%;
@@ -247,7 +245,6 @@ footer p {
     top: -120px;
   }
 }
-/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
 
 @media (max-width: 576px) {
   #servicios-fila-2 {
@@ -256,10 +253,13 @@ footer p {
   #servicios-fila-1 {
     width: 100% !important;
   }
-
   .icono-wrap {
-    flex-wrap: wrap !important;
-    justify-content: center !important;
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
     text-align: center;
   }
 }
+/*# sourceMappingURL=style.css.map */

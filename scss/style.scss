@@ -1,0 +1,223 @@
+@import "variables"
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	outline: none;
+	text-align: center;
+}
+body {
+	font-family: "Montserrat", sans-serif;
+	overflow-x: hidden;
+}
+#menu {
+	a {
+		font-size: 18px !important;
+		font-weight: 600;
+		color: #3f3f3f;
+	}
+}
+button {
+	font-size: 18px !important;
+	font-weight: 600;
+}
+.carousel-inner {
+	max-height: 39rem !important;
+}
+.fondo-equipo {
+	background-image: url(../img/fondo.contacto3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+#img-equipo {
+	max-height: 30rem !important;
+	width: 50%;
+	margin-bottom: 25px;
+}
+#equipo {
+	p {
+		padding: 10px;
+		background-color: rgba(240, 255, 255, 0);
+		&:hover {
+			background-color: #1b52d1b0;
+			color: aliceblue;
+		}
+	}
+}
+#local {
+	margin-top: -62px;
+	background-image: url(../img/paisaje.salta1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 300px;
+}
+.mapa {
+	width: 100%;
+	height: 500px;
+}
+.wrapper-local {
+	width: 75%;
+	margin-left: 100px;
+	padding-top: 120px;
+}
+#seccion-contacto {
+	background-image: url(../img/formulario1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 500px;
+	position: relative;
+	padding: 50px;
+}
+#contenedor-formulario {
+	background: #fbfafa;
+	border-radius: 5px;
+	padding-bottom: 10px;
+}
+#galeria {
+	.col-lg-4 {
+		margin: 0 !important;
+		padding: 25px;
+	}
+	img {
+		width: 100%;
+		height: 250px;
+		&:hover {
+			border: 5px solid #f7f7f7;
+		}
+	}
+}
+#aventuras {
+	padding: 20px 10px 13px;
+	.aventuras_title {
+		margin-bottom: 26px;
+	}
+	.aventuras_player {
+		iframe {
+			display: block;
+			width: 100%;
+			margin-bottom: 11px;
+		}
+	}
+}
+.container-full-width {
+	max-width: 100%;
+	width: 100%;
+}
+
+#iconos {
+	i {
+		font-size: 26px;
+		padding: 0 8px;
+		color: #f3f3f3;
+	}
+}
+@media screen and (min-width: 765px) {
+	#aventuras {
+		position: relative;
+		width: 100%;
+		height: auto;
+		margin-bottom: 20px;
+		.aventuras_player {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 61px;
+			iframe {
+				width: 100%;
+				max-width: 584px;
+				height: 232px;
+			}
+		}
+	}
+}
+@media screen and (min-width: 768px) {
+	#aventuras {
+		position: relative;
+		width: 100%;
+		height: auto;
+		margin-bottom: 20px;
+		padding: 20px 10px 13px;
+		.aventuras_title {
+			margin-bottom: 26px;
+			padding: 0 100px;
+		}
+		.aventuras_player {
+			display: flex;
+			justify-content: space-around;
+			margin-bottom: 61px;
+			iframe {
+				width: 100%;
+				max-width: 584px;
+				height: 232px;
+			}
+		}
+	}
+}
+@media (max-width: 1200px) {
+	#intro {
+		width: 90% !important;
+		margin: auto;
+	}
+	#equipo {
+		width: 90% !important;
+		margin: auto;
+	}
+	#local {
+		flex-wrap: wrap;
+		padding-top: 30px;
+	}
+	.wrapper-local {
+		width: 90%;
+		margin: auto;
+		padding-top: 50px;
+	}
+}
+@media (max-width: 768px) {
+	#intro {
+		width: 90% !important;
+		margin: auto;
+	}
+	#equipo {
+		width: 90% !important;
+		margin: auto;
+	}
+	#img-equipo {
+		max-height: 20rem !important;
+		width: 90%;
+	}
+	.wrapper-local {
+		width: 90%;
+		margin: auto;
+		padding-top: 50px;
+	}
+	#local {
+		flex-wrap: wrap;
+	}
+	.mapa {
+		width: 100%;
+		height: auto;
+	}
+	#bg-contactos {
+		top: -120px;
+	}
+}
+@media (max-width: 576px) {
+	#servicios-fila-2 {
+		width: 100% !important;
+	}
+	#servicios-fila-1 {
+		width: 100% !important;
+	}
+	.icono-wrap {
+		flex-wrap: wrap !important;
+		justify-content: center !important;
+		text-align: center;
+	}
+}
