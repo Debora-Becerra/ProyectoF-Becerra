@@ -58,7 +58,7 @@ button {
 }
 /*===================AVENTURAS-CLIENTES==========================*/
 
-@media screen and (min-width: 765px;) {
+@media screen and (min-width: 765px;){
   #aventuras {
     position: relative;
     width: 100%;
@@ -143,7 +143,11 @@ button {
 }
 
 #aventuras {
-  padding: 30px 10px 13px; 
+  padding: 20px 10px 13px; 
+}
+.container-full-width {
+  max-width: 100%;
+  width: 100%;
 }
 #aventuras .aventuras_title {
   margin-bottom: 26px;
@@ -159,13 +163,18 @@ button {
   width: 100%;
   height: auto;
   margin-bottom: 20px;
+  padding: 20px 10px 13px;
   
+}
+#aventuras .aventuras_title {
+  margin-bottom: 26px;
+  padding: 0 100px;
 }
 #aventuras .aventuras_player {
   display: flex;
-  justify-content: center;
-  margin-bottom: 15px;
-  gap: 15px;
+  justify-content: space-around;
+  margin-bottom: 61px;
+  
 }
 #aventuras .aventuras_player iframe {
   width: 100%;
