@@ -80,6 +80,12 @@ button {
 	border-radius: 5px;
 	padding-bottom: 10px;
 }
+.fondo_galeria {
+	background-image: url(../img/fondo.equipo1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
 #galeria {
 	.col-lg-4 {
 		margin: 0 !important;
