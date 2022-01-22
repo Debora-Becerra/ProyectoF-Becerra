@@ -1,5 +1,4 @@
-@import "variables"
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+//*Inicio*//
 * {
 	margin: 0;
 	padding: 0;
@@ -118,6 +117,14 @@ button {
 		padding: 0 8px;
 		color: #f3f3f3;
 	}
+}
+footer {
+	background: #1b51d1;
+	min-height: 100px;
+}  
+footer p {
+	color: #f3f3f3;
+	text-align: center;
 }
 @media screen and (min-width: 765px) {
 	#aventuras {
