@@ -283,4 +283,38 @@ footer p {
     text-align: center;
   }
 }
+
+/* APLICANDO SASS*/
+#seccion-contacto .btn--info {
+  display: inline-block;
+  padding: 20px;
+  border: 1px solid black;
+  margin: 20px;
+  background-color: blue;
+}
+
+#seccion-contacto .btn--reserva {
+  display: inline-block;
+  padding: 20px;
+  border: 1px solid black;
+  margin: 20px;
+  background-color: chartreuse;
+}
+
+/*MAPAS*/
+.info-parrafo1 {
+  background-color: blue;
+}
+
+.info-parrafo2 {
+  background-color: lightblue;
+}
+
+.info-parrafo3 {
+  background-color: blueviolet;
+}
+
+.parrafo4 {
+  background: red;
+}
 /*# sourceMappingURL=style.css.map */

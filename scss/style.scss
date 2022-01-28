@@ -245,3 +245,39 @@ footer p {
 		text-align: center;
 	}
 }
+
+/* APLICANDO SASS*/
+@mixin btn {
+	display: inline-block;
+	padding: 20px;
+	border: 1px solid black;
+	margin: 20px
+}
+#seccion-contacto .btn--info {
+	@include btn;
+	background-color: blue;
+}
+#seccion-contacto .btn--reserva {
+	@include btn;
+	background-color: chartreuse;
+}
+
+/*MAPAS
+$condiciones: (
+	parrafo1: blue,
+	parrafo2: lightblue,
+	parrafo3: blueviolet
+);
+@each $nombre, $valor in $condiciones {
+	.info-#{$nombre} {
+		background-color: $valor;
+	}
+}
+$colores: (
+	principal: red,
+	base: black,
+	fondo: aqua
+);
+.parrafo4 {
+	background: map-get($colores, principal);
+}*/
