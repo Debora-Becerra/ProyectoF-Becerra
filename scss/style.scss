@@ -255,14 +255,14 @@ footer p {
 }
 #seccion-contacto .btn--info {
 	@include btn;
-	background-color: blue;
+	background-color: rgb(33, 196, 12);
 }
 #seccion-contacto .btn--reserva {
 	@include btn;
-	background-color: chartreuse;
+	background-color: rgb(6, 83, 172);
 }
+/*MAPAS*/
 
-/*MAPAS
 $condiciones: (
 	parrafo1: blue,
 	parrafo2: lightblue,
@@ -280,4 +280,4 @@ $colores: (
 );
 .parrafo4 {
 	background: map-get($colores, principal);
-}*/
+}
