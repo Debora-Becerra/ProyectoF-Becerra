@@ -288,17 +288,37 @@ footer p {
 #seccion-contacto .btn--info {
   display: inline-block;
   padding: 20px;
-  border: 1px solid black;
+  text-decoration: none;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   margin: 20px;
-  background-color: blue;
+  background: -webkit-gradient(linear, left top, left bottom, from(#047c14), to(#08da24));
+  background: linear-gradient(180deg, #047c14 0%, #08da24 100%);
+}
+
+#seccion-contacto .btn--info.btn--info:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fbde74), to(#ff4800));
+  background: linear-gradient(180deg, #fbde74 0%, #ff4800 100%);
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 #seccion-contacto .btn--reserva {
   display: inline-block;
   padding: 20px;
-  border: 1px solid black;
+  text-decoration: none;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   margin: 20px;
-  background-color: chartreuse;
+  background: -webkit-gradient(linear, left top, left bottom, from(#400bbb), to(#305485));
+  background: linear-gradient(180deg, #400bbb 0%, #305485 100%);
+}
+
+#seccion-contacto .btn--reserva.btn--reserva:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#91a3f3), to(#111111));
+  background: linear-gradient(180deg, #91a3f3 0%, #111111 100%);
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 /*MAPAS*/

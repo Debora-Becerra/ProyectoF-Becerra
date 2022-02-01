@@ -250,16 +250,27 @@ footer p {
 @mixin btn {
 	display: inline-block;
 	padding: 20px;
-	border: 1px solid black;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	border: 1px solid rgba(255, 255, 255, 0.5);
 	margin: 20px
 }
 #seccion-contacto .btn--info {
 	@include btn;
-	background-color: rgb(33, 196, 12);
+	background: linear-gradient(180deg, #047c14 0%, #08da24 100%);
+	&.btn--info:hover {
+		background: linear-gradient(180deg, #fbde74 0%, #ff4800 100%);
+		transition: all .3s;
+	}
 }
+
 #seccion-contacto .btn--reserva {
 	@include btn;
-	background-color: rgb(6, 83, 172);
+	background: linear-gradient(180deg, #400bbb 0%, #305485 100%);
+	&.btn--reserva:hover {
+		background: linear-gradient(180deg, #91a3f3 0%, #111111 100%);
+		transition: all .3s;
+		}
 }
 /*MAPAS*/
 
