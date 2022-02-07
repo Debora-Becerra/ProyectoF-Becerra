@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2? family= Kanit & family= Oswald:wght@200;300;400;600;700 & family= Permanent+Marker & family= Poppins: peso@300 & mostrar=cambiar");
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +14,10 @@
 body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
+}
+
+.text_inicio {
+  color: #df7f01;
 }
 
 #menu a {
@@ -104,7 +110,7 @@ button {
 }
 
 #contenedor-formulario {
-  background: #fbfafa;
+  background: rgba(255, 255, 255, 0.329);
   border-radius: 5px;
   padding-bottom: 10px;
 }
@@ -157,7 +163,8 @@ button {
 
 footer {
   background: #1b51d1;
-  min-height: 100px;
+  min-height: 55px;
+  padding-top: 0;
 }
 
 footer p {
@@ -287,54 +294,128 @@ footer p {
 /* APLICANDO SASS*/
 #seccion-contacto .btn--info {
   display: inline-block;
-  padding: 20px;
+  padding: 10px 20px;
+  font-size: 15px;
   text-decoration: none;
+  background: rgba(0, 0, 0, 0.404);
+  border-style: none;
+  border: 2px solid white;
   color: white;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  margin: 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#047c14), to(#08da24));
-  background: linear-gradient(180deg, #047c14 0%, #08da24 100%);
+  margin-top: 20px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  cursor: pointer;
 }
 
 #seccion-contacto .btn--info.btn--info:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fbde74), to(#ff4800));
-  background: linear-gradient(180deg, #fbde74 0%, #ff4800 100%);
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  background: rgba(243, 84, 10, 0.384);
 }
 
 #seccion-contacto .btn--reserva {
   display: inline-block;
-  padding: 20px;
+  padding: 10px 20px;
+  font-size: 15px;
   text-decoration: none;
+  background: rgba(0, 0, 0, 0.404);
+  border-style: none;
+  border: 2px solid white;
   color: white;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  margin: 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#400bbb), to(#305485));
-  background: linear-gradient(180deg, #400bbb 0%, #305485 100%);
+  margin-top: 20px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  cursor: pointer;
 }
 
 #seccion-contacto .btn--reserva.btn--reserva:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#91a3f3), to(#111111));
-  background: linear-gradient(180deg, #91a3f3 0%, #111111 100%);
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  background: rgba(11, 235, 41, 0.445);
 }
 
 /*MAPAS*/
 .info-parrafo1 {
-  background-color: blue;
+  background-color: #585858;
 }
 
 .info-parrafo2 {
-  background-color: lightblue;
+  background-color: #e2ebee;
 }
 
 .info-parrafo3 {
-  background-color: blueviolet;
+  background-color: rgba(98, 95, 100, 0.897);
 }
 
-.parrafo4 {
-  background: red;
+/* NUEVA PASTAÑA*/
+.info__fondo {
+  font-family: "Poppins", sans-serif;
+  background: burlywood;
+}
+
+.container__info {
+  width: 100%;
+  margin: 0 auto 20px;
+  position: relative;
+  top: 20px;
+}
+
+.condiciones {
+  width: 100%;
+  margin: 0 auto 20px;
+  position: relative;
+  top: 20px;
+}
+
+.mas__info {
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0;
+  max-width: 1200px;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 3.5em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mas__info .info-item {
+  background: #f2f2f2;
+  padding-bottom: 3em;
+  -ms-flex-preferred-size: 280px;
+      flex-basis: 280px;
+  max-width: 450px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.mas__info .info-item .info-content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.mas__info .info-item .info-content .info-picture {
+  width: 90%;
+  margin: 0 auto;
+  background: #dee0e4;
+  position: relative;
+  bottom: 2em;
+}
+
+.mas__info .info-item .info-content .info-picture .info-img {
+  width: 100%;
+}
+
+.mas__info .info-item .info-content .info-picture .info-img .info-texts {
+  margin-bottom: 1em;
+}
+
+.info-paragraph {
+  margin: 10px;
 }
 /*# sourceMappingURL=style.css.map */

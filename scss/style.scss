@@ -12,6 +12,9 @@ body {
 	font-family: "Montserrat", sans-serif;
 	overflow-x: hidden;
 }
+.text_inicio{
+	color: #df7f01;
+}
 #menu {
 	a {
 		font-size: 18px !important;
@@ -87,7 +90,7 @@ button {
 	padding: 50px;
 }
 #contenedor-formulario {
-	background: #fbfafa;
+	background: rgba(255, 255, 255, 0.329);
 	border-radius: 5px;
 	padding-bottom: 10px;
 }
@@ -137,7 +140,8 @@ button {
 }
 footer {
 	background: #1b51d1;
-	min-height: 100px;
+	min-height: 55px;
+	padding-top: 0;
 }  
 footer p {
 	color: #f3f3f3;
@@ -249,35 +253,37 @@ footer p {
 /* APLICANDO SASS*/
 @mixin btn {
 	display: inline-block;
-	padding: 20px;
+	padding: 10px 20px;
+	font-size: 15px;
 	text-decoration: none;
-	color: rgb(255, 255, 255);
-	border: 1px solid rgba(255, 255, 255, 0.5);
-	margin: 20px
+	background: rgba(0, 0, 0, 0.404);
+	border-style: none;
+	border: 2px solid white;
+	color: white;
+	margin-top: 20px;
+	transition: all 300ms;
+	cursor: pointer;
 }
 #seccion-contacto .btn--info {
 	@include btn;
-	background: linear-gradient(180deg, #047c14 0%, #08da24 100%);
 	&.btn--info:hover {
-		background: linear-gradient(180deg, #fbde74 0%, #ff4800 100%);
-		transition: all .3s;
+		background: rgba(243, 84, 10, 0.384) ;
+	
 	}
 }
 
 #seccion-contacto .btn--reserva {
 	@include btn;
-	background: linear-gradient(180deg, #400bbb 0%, #305485 100%);
 	&.btn--reserva:hover {
-		background: linear-gradient(180deg, #91a3f3 0%, #111111 100%);
-		transition: all .3s;
+		background: rgba(11, 235, 41, 0.445) ;
 		}
 }
 /*MAPAS*/
 
 $condiciones: (
-	parrafo1: blue,
-	parrafo2: lightblue,
-	parrafo3: blueviolet
+	parrafo1: rgb(88, 88, 88),
+	parrafo2: rgb(226, 235, 238),
+	parrafo3: rgba(98, 95, 100, 0.897)
 );
 @each $nombre, $valor in $condiciones {
 	.info-#{$nombre} {
@@ -289,6 +295,61 @@ $colores: (
 	base: black,
 	fondo: aqua
 );
-.parrafo4 {
-	background: map-get($colores, principal);
+
+/* NUEVA PASTAÑA*/
+@import url('https://fonts.googleapis.com/css2? family= Kanit & family= Oswald:wght@200;300;400;600;700 & family= Permanent+Marker & family= Poppins: peso@300 & mostrar=cambiar');
+.info__fondo {
+	font-family: "Poppins", sans-serif;
+	background: burlywood;
+}
+.container__info {
+	width: 100%;
+	margin: 0 auto 20px;
+	position: relative;
+	top: 20px;
+}
+.condiciones {
+	width: 100%;
+	margin: 0 auto 20px;
+	position: relative;
+	top: 20px;
+}
+.mas__info {
+	width: 90%;
+	margin: 0 auto;
+	padding: 60px 0;
+	max-width: 1200px;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 3.5em;
+	flex-wrap: wrap;
+	.info-item {
+		background: #f2f2f2;
+		padding-bottom: 3em;
+		flex-basis: 280px;
+		max-width: 450px;
+		flex-grow: 1;
+		.info-content {
+			width: 90%;
+			margin: 0 auto;
+			.info-picture {
+				width: 90%;
+				margin: 0 auto;
+				background: rgb(222, 224, 228);
+				position: relative;
+				bottom: 2em;
+				.info-img {
+					width: 100%;
+					.info-texts {
+						margin-bottom: 1em;
+					}
+				}
+			}
+		}
+	}
+}
+.info-paragraph{
+	margin: 10px
 }
