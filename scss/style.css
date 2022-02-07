@@ -156,13 +156,12 @@ button {
 }
 
 #iconos i {
-  font-size: 26px;
+  font-size: 20px;
   padding: 0 8px;
   color: #f3f3f3;
 }
 
 footer {
-  background: #1b51d1;
   min-height: 55px;
   padding-top: 0;
 }
