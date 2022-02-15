@@ -20,6 +20,15 @@ body {
   color: #df7f01;
 }
 
+nav .nav-item {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav .nav-item .nav-item:hover {
+  color: #a5f059;
+}
+
 .fondo__index {
   background-color: rgba(196, 220, 240, 0.432);
 }
@@ -99,11 +108,11 @@ button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: calc(-1 * var(--bs-gutter-y));
-  margin-right: calc(-.5 * var(--bs-gutter-x));
-  margin-left: calc(-.5 * var(--bs-gutter-x));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
 
-#seccion-contacto {
+.fondo_fondo {
   background-image: url(../img/formulario1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -119,11 +128,11 @@ button {
   padding-bottom: 10px;
 }
 
-.contenedor {
+.contenedor_precio {
+  position: relative;
   width: 90%;
   max-width: 900px;
   margin: auto;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,13 +148,12 @@ button {
 
 .tabla {
   width: 33%;
-  height: 550px;
   margin: auto;
-  border: 1px solid #34375996;
-  background-color: #f1f1f215;
+  border: 1px solid #f7f7f896;
+  background-color: #f1f1f23d;
   border-radius: 4px;
-  -webkit-box-shadow: 0px 0px 4px 0px  #343759;
-          box-shadow: 0px 0px 4px 0px  #343759;
+  -webkit-box-shadow: 0px 0px 4px 0px #343759;
+          box-shadow: 0px 0px 4px 0px #343759;
   padding: 60px;
   text-align: center;
   -webkit-box-flex: 1;
@@ -154,24 +162,24 @@ button {
   color: #343759;
 }
 
-.tabla > h2 {
+.tabla h2 {
   font-size: 30px;
   margin-bottom: 35px;
+}
+
+.tabla h2 h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.tabla h2 h3 p {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .tabla img {
   width: 64px;
   margin-bottom: 35px;
-}
-
-.tabla > h3 {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-.tabla > p {
-  display: block;
-  margin-bottom: 20px;
 }
 
 .boton {
@@ -188,11 +196,11 @@ button {
   margin: auto;
 }
 
-.tabla:hover, .hover {
+.tabla:hover {
   background: #343759;
   color: #f1f1f2;
-  -webkit-transition: .5s all;
-  transition: .5s all;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   cursor: pointer;
@@ -269,6 +277,8 @@ button {
   font-size: 20px;
   padding: 0 8px;
   color: #f3f3f3;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 footer {
@@ -402,6 +412,7 @@ footer p {
 
 /* APLICANDO SASS*/
 #seccion-contacto .btn--info {
+  margin-bottom: 30px;
   display: inline-block;
   padding: 10px 20px;
   font-size: 15px;
@@ -419,25 +430,6 @@ footer p {
 #seccion-contacto .btn--info.btn--info:hover {
   background: #a5f059;
   color: #3f3f3f;
-}
-
-#seccion-contacto .btn--reserva {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 15px;
-  text-decoration: none;
-  background: rgba(0, 0, 0, 0.404);
-  border-style: none;
-  border: 2px solid white;
-  color: white;
-  margin-top: 20px;
-  -webkit-transition: all 300ms;
-  transition: all 300ms;
-  cursor: pointer;
-}
-
-#seccion-contacto .btn--reserva.btn--reserva:hover {
-  background: rgba(11, 235, 41, 0.445);
 }
 
 /*MAPAS*/
