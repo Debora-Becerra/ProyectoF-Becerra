@@ -16,18 +16,30 @@ body {
   overflow-x: hidden;
 }
 
+.nav-link {
+  font-size: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav-link:hover {
+  font-size: 25px;
+  -webkit-transition: 1, 5s;
+  transition: 1, 5s;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
 .text_inicio {
   color: #df7f01;
 }
 
-.fondo__index {
-  background-color: rgba(196, 220, 240, 0.432);
+#servicios-fila-1 img:hover {
+  border: solid white;
 }
 
-#menu a {
-  font-size: 18px !important;
-  font-weight: 600;
-  color: #3f3f3f;
+#servicios-fila-2 img:hover {
+  border: solid white;
 }
 
 button {
@@ -40,10 +52,16 @@ button {
 }
 
 .fondo-equipo {
-  background-image: url(../img/fondo.contacto3.jpg);
+  background-image: url(../img/salta-lalinda.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+#equipo h1:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-shadow: 5px 5px #858080;
 }
 
 #img-equipo {
@@ -59,7 +77,9 @@ button {
 }
 
 #equipo p:hover {
-  background-color: #1b52d1b0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: #81899bb0;
   color: aliceblue;
 }
 
@@ -99,11 +119,11 @@ button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: calc(-1 * var(--bs-gutter-y));
-  margin-right: calc(-.5 * var(--bs-gutter-x));
-  margin-left: calc(-.5 * var(--bs-gutter-x));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
 
-#seccion-contacto {
+.fondo_fondo {
   background-image: url(../img/formulario1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -113,17 +133,24 @@ button {
   padding: 50px;
 }
 
+.img-contacto:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
 #contenedor-formulario {
   background: rgba(255, 255, 255, 0.329);
   border-radius: 5px;
   padding-bottom: 10px;
 }
 
-.contenedor {
+.contenedor_precio {
+  position: relative;
   width: 90%;
   max-width: 900px;
   margin: auto;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,13 +166,12 @@ button {
 
 .tabla {
   width: 33%;
-  height: 550px;
   margin: auto;
-  border: 1px solid #34375996;
-  background-color: #f1f1f215;
+  border: 1px solid #f7f7f896;
+  background-color: #f1f1f23d;
   border-radius: 4px;
-  -webkit-box-shadow: 0px 0px 4px 0px  #343759;
-          box-shadow: 0px 0px 4px 0px  #343759;
+  -webkit-box-shadow: 0px 0px 4px 0px #343759;
+          box-shadow: 0px 0px 4px 0px #343759;
   padding: 60px;
   text-align: center;
   -webkit-box-flex: 1;
@@ -154,24 +180,24 @@ button {
   color: #343759;
 }
 
-.tabla > h2 {
+.tabla h2 {
   font-size: 30px;
   margin-bottom: 35px;
+}
+
+.tabla h2 h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.tabla h2 h3 p {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .tabla img {
   width: 64px;
   margin-bottom: 35px;
-}
-
-.tabla > h3 {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-.tabla > p {
-  display: block;
-  margin-bottom: 20px;
 }
 
 .boton {
@@ -188,11 +214,11 @@ button {
   margin: auto;
 }
 
-.tabla:hover, .hover {
+.tabla:hover {
   background: #343759;
   color: #f1f1f2;
-  -webkit-transition: .5s all;
-  transition: .5s all;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   cursor: pointer;
@@ -226,12 +252,33 @@ button {
   }
 }
 
-/*.fondo_galeria {
-	background-image: url(../img/fondo.equipo1.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-}*/
+.titulo_gale:hover {
+  border: solid #f3f3f3;
+  color: #f1f1f2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.fondo_galeria {
+  background: #c9d6ff;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#e2e2e2), to(#c9d6ff));
+  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.fondo_galeria:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  background: #005aa7;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#fffde4), to(#005aa7));
+  background: linear-gradient(to right, #fffde4, #005aa7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 #galeria .col-lg-4 {
   margin: 0 !important;
   padding: 25px;
@@ -246,12 +293,28 @@ button {
   border: 5px solid #f7f7f7;
 }
 
+.fondo-clientes {
+  background: #c9d6ff;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#e2e2e2), to(#c9d6ff));
+  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 #aventuras {
   padding: 20px 10px 13px;
 }
 
 #aventuras .aventuras_title {
   margin-bottom: 26px;
+}
+
+#aventuras .aventuras_title:hover {
+  font-size: 40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #005aa7;
 }
 
 #aventuras .aventuras_player iframe {
@@ -269,6 +332,8 @@ button {
   font-size: 20px;
   padding: 0 8px;
   color: #f3f3f3;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 footer {
@@ -402,6 +467,7 @@ footer p {
 
 /* APLICANDO SASS*/
 #seccion-contacto .btn--info {
+  margin-bottom: 30px;
   display: inline-block;
   padding: 10px 20px;
   font-size: 15px;
@@ -421,25 +487,6 @@ footer p {
   color: #3f3f3f;
 }
 
-#seccion-contacto .btn--reserva {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 15px;
-  text-decoration: none;
-  background: rgba(0, 0, 0, 0.404);
-  border-style: none;
-  border: 2px solid white;
-  color: white;
-  margin-top: 20px;
-  -webkit-transition: all 300ms;
-  transition: all 300ms;
-  cursor: pointer;
-}
-
-#seccion-contacto .btn--reserva.btn--reserva:hover {
-  background: rgba(11, 235, 41, 0.445);
-}
-
 /*MAPAS*/
 .info-parrafo1 {
   background-color: #585858;
@@ -456,7 +503,12 @@ footer p {
 /* NUEVA PASTAÑA*/
 .info__fondo {
   font-family: "Poppins", sans-serif;
-  background: burlywood;
+  background: #0f2027;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#2c5364), color-stop(#203a43), to(#0f2027));
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .container__info {
@@ -471,6 +523,9 @@ footer p {
   margin: 0 auto 20px;
   position: relative;
   top: 20px;
+  margin: 30px;
+  padding: 20px;
+  background-color: #5253576c;
 }
 
 .mas__info {
@@ -478,7 +533,7 @@ footer p {
   margin: 0 auto;
   padding: 60px 0;
   max-width: 1200px;
-  min-height: 100vh;
+  min-height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
