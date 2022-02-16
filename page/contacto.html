@@ -28,10 +28,15 @@
 
 <body>
    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark"">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
          <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
                <img src="../img/AAAA.png" width="50" height="50" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+               aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                <ul class="navbar-nav">
                   <li class="nav-item">
@@ -56,35 +61,36 @@
    </header>
    <!-- SECCION CONTACTOS-->
    <section class="fondo_fondo">
-   <section id="seccion-contacto">
-      <div class="container" style="max-width: 500px" id="contenedor-formulario">
-         <div class="text-center mb-4" id="titulo-formulario">
-            <div class="img-contacto">
-               <img src="../img/contact-primay.png" alt="" class="img-fluid ps-5"></div>
-            <h6 class="fs-6 pt-4">Estamos aqui para resolver tus dudas</h6>
+      <section id="seccion-contacto">
+         <div class="container" style="max-width: 500px" id="contenedor-formulario">
+            <div class="text-center mb-4" id="titulo-formulario">
+               <div class="img-contacto">
+                  <img src="../img/contact-primay.png" alt="" class="img-fluid ps-5">
+               </div>
+               <h6 class="fs-6 pt-4">Estamos aqui para resolver tus dudas</h6>
+            </div>
+            <form method="POST" data-netlify="true" action="#">
+               <div class="mb-3">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com">
+               </div>
+               <div class="mb-3">
+                  <input type="text" class="form-control" name="name" id="name" placeholder="Nombre">
+               </div>
+               <div class="mb-3">
+                  <input type="tel" class="form-control" name="phone" id="phone" placeholder="Teléfono">
+               </div>
+               <div class="mb-3">
+                  <textarea class="form-control" name="message" id="message" rows="4"></textarea>
+               </div>
+               <div class="mb-3">
+                  <button type="submit" class=" btn btn-primary w-100 fs-5">Enviar Mensaje</button>
+               </div>
+            </form>
          </div>
-         <form method="POST" data-netlify="true" action="#">
-            <div class="mb-3">
-               <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com">
-            </div>
-            <div class="mb-3">
-               <input type="text" class="form-control" name="name" id="name" placeholder="Nombre">
-            </div>
-            <div class="mb-3">
-               <input type="tel" class="form-control" name="phone" id="phone" placeholder="Teléfono">
-            </div>
-            <div class="mb-3">
-               <textarea class="form-control" name="message" id="message" rows="4"></textarea>
-            </div>
-            <div class="mb-3">
-               <button type="submit" class=" btn btn-primary w-100 fs-5">Enviar Mensaje</button>
-            </div>
-         </form>
-      </div>
-      <div>
-         <a href="../page/condiciones.html" target="_blank" class="btn--info"><strong>MAS INFORMACIÓN</strong></a>
-      </div>
-   </section>
+         <div>
+            <a href="../page/condiciones.html" target="_blank" class="btn--info"><strong>MAS INFORMACIÓN</strong></a>
+         </div>
+      </section>
       <div class="contenedor_precio">
          <div class="tabla">
             <h2>Paracaídas</h2>
@@ -112,13 +118,13 @@
    </section>
 
    <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap bg-dark">
-   <p class="fs-6 px-3  pt-3">Adventure &copy; Todos Los Derechos Reservados 2022</p>
-   <div id="iconos">
-       <a href="https://es-la.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
-       <a href="https://twitter.com/?lang=es" target="_blank"><i class="bi bi-twitter"></i></a>
-       <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="bi bi-instagram"></i></a>
-   </div>
-</footer>
+      <p class="fs-6 px-3  pt-3">Adventure &copy; Todos Los Derechos Reservados 2022</p>
+      <div id="iconos">
+         <a href="https://es-la.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+         <a href="https://twitter.com/?lang=es" target="_blank"><i class="bi bi-twitter"></i></a>
+         <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="bi bi-instagram"></i></a>
+      </div>
+   </footer>
 
 </body>
 
