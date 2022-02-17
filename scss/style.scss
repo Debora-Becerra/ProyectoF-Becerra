@@ -43,6 +43,8 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  justify-content: center;
+  padding-bottom: 300px;
 }
 #equipo h1:hover {
   transition: 0.5s;
@@ -67,7 +69,7 @@ button {
 }
 /* PESTAÑA DE UBICACIÓN */
 #local {
-  margin-top: 70px;
+  margin-top: 25px;
 }
 .fondo-ubicacion {
   background-image: url(../img/atardecer-fondomapa.jpg);
