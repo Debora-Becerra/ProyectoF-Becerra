@@ -11,6 +11,7 @@ body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
+/* BARRA DE NAVEGACIÓN Y PÁGINA DE INICIO*/
 .nav-link {
   font-size: 20px;
   transition: 0.5s;
@@ -18,7 +19,6 @@ body {
 .nav-link:hover {
   font-size: 25px;
   transition: 1, 5s;
-  transform: rotate(360deg);
 }
 .text_inicio {
   color: #df7f01;
@@ -37,6 +37,7 @@ button {
 .carousel-inner {
   max-height: 39rem !important;
 }
+/* PESTAÑA -NOSOTROS-*/
 .fondo-equipo {
   background-image: url(../img/salta-lalinda.jpg);
   background-repeat: no-repeat;
@@ -64,9 +65,12 @@ button {
     }
   }
 }
+/* PESTAÑA DE UBICACIÓN */
 #local {
-  margin-top: -62px;
-  background-image: url(../img/fondo.ubicacion1.jpg);
+  margin-top: 70px;
+}
+.fondo-ubicacion {
+  background-image: url(../img/atardecer-fondomapa.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -79,11 +83,7 @@ button {
   height: 500px;
   padding-top: 60px;
 }
-.wrapper-local {
-  width: 75%;
-  margin-left: 100px;
-  padding-top: 120px;
-}
+
 .row {
   --bs-gutter-x: 0;
   --bs-gutter-y: 0;
@@ -290,14 +290,7 @@ button {
   max-width: 100%;
   width: 100%;
 }
-
-#iconos i {
-  font-size: 20px;
-  padding: 0 8px;
-  color: #f3f3f3;
-  transition: 0.5s;
-}
-
+/* FOOTER*/
 footer {
   min-height: 55px;
   padding-top: 0;
@@ -306,6 +299,15 @@ footer {
     text-align: center;
   }
 }
+#iconos {
+  height: 40px;
+  & i {
+    font-size: 20px;
+    padding: 0 8px;
+    color: #f3f3f3;
+  }
+}
+
 
 @media screen and (min-width: 765px) {
   #aventuras {
@@ -360,11 +362,6 @@ footer {
   #local {
     flex-wrap: wrap;
     padding-top: 30px;
-  }
-  .wrapper-local {
-    width: 90%;
-    margin: auto;
-    padding-top: 50px;
   }
 }
 @media (max-width: 768px) {
